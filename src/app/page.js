@@ -15,7 +15,7 @@ export default function Home() {
         <div className="z-10 h-full w-full max-w-3xl md:w-3/4 md:pr-12 lg:w-1/2">
           <div className="text-center md:text-left">
             <h1 className="mb-4 text-3xl font-semibold text-[var(--light-text-color)] [font-family:var(--font-family-heading)] sm:text-4xl md:pr-36 md:text-6xl">Elevate Your Wedding Experience</h1>
-            <p className="mb-8 text-lg text-[var(--light-text-color)]">Capture the essence of your special day with stunning photography that tells your unique love story. With an artistic eye and attention to detail, I create breathtaking images that you'll cherish forever.</p>
+            <p className="mb-8 text-lg text-[var(--light-text-color)]">Capture the essence of your special day with stunning photography that tells your unique love story. With an artistic eye and attention to detail, I create breathtaking images that you&apos;ll cherish forever.</p>
             <div>
               <a href="/gallery" className="inline-block rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-sm font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)]">
                 <span>Explore the magic of your wedding day</span>
@@ -141,7 +141,7 @@ export default function Home() {
       <section className="bg-gradient-to-b from-[var(--light-background-color)]">
         <div className="container mx-auto mt-8 px-6 pb-12 pt-8 md:mt-20 md:pb-24 md:pt-20">
           <div className="mb-3 text-center text-3xl font-semibold [font-family:var(--font-family-heading)] md:text-5xl">Our Satisfied Clients</div>
-          <div className="mb-12 text-center text-sm text-gray-500">Discover the experiences of couples we've captured</div>
+          <div className="mb-12 text-center text-sm text-gray-500">Discover the experiences of couples we&apos;ve captured</div>
           <div className="flex flex-col items-center justify-center space-y-12 lg:flex-row lg:space-x-20 lg:space-y-0">
             {/* Testimonials */}
             {[
@@ -206,7 +206,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row lg:space-x-8">
               <div className="rounded-3xl bg-[var(--primary-color)] p-8 pt-12 text-[var(--light-text-color)]">
                 <div className="mb-4 uppercase">Get in Touch</div>
-                <div className="mb-6 text-4xl font-semibold [font-family:var(--font-family-heading)]">We'd Love to Capture Your Story</div>
+                <div className="mb-6 text-4xl font-semibold [font-family:var(--font-family-heading)]">We&apos;d Love to Capture Your Story</div>
                 <div className="hidden py-4 lg:block">
                   <div className="mb-6 flex flex-row space-x-4">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full border border-[#ffffff] p-6">
