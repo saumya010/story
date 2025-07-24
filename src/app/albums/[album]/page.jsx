@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import Image from "next/image";
+import AlbumGallery from "./AlbumGallery";
 
 export const dynamic = "force-static";
 
@@ -27,19 +27,8 @@ export default function AlbumPage({ params }) {
   return (
     <div className="container mx-auto px-6 py-12">
       <h1 className="mb-8 text-4xl font-bold text-center">{album}</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {images.map((img, i) => (
-          <div key={i} className="rounded overflow-hidden shadow">
-            <Image
-              src={img}
-              alt={`Photo ${i + 1} from ${album}`}
-              width={400}
-              height={300}
-              className="w-full h-48 object-cover"
-            />
-          </div>
-        ))}
-      </div>
+      {/* AlbumGallery is a client component, so it will only run on the client */}
+      <AlbumGallery images={images} album={album} />
     </div>
   );
 } 

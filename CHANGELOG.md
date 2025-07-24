@@ -22,5 +22,6 @@ All notable changes to this project will be documented in this file.
 - Created a Testimonials page with dummy content, including a hero image and sample testimonials with names and reviews.
 - Updated the homepage gallery section to use 8 random images from album1, ensuring no overlap with the portfolio section.
 - Added an automated image optimization script (optimize-images.js) using sharp to resize and compress all images in public/images/albums.
+- Added lightbox functionality to the album image page, allowing users to click and view images in a modal overlay with close and escape support.
 
 > Note: All types of changes, including minor and cosmetic edits, will be logged in this changelog from now on. 
