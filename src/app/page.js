@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-background">
       <section className="relative flex h-[700px] w-full px-6 pt-48 text-center md:px-12 lg:px-24 xl:px-52">
         {/* leave data-seo-image attribute on this div */}
         <div
