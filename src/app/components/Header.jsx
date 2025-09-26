@@ -22,7 +22,7 @@ const Header = () => (
           id="mobile-menu-button"
           data-collapse-toggle="navigation-menu"
           type="button"
-          className="pr-6 text-[var(--dark-text-color)] lg:hidden"
+          className="pr-6 text-accent-1 lg:hidden"
           aria-controls="navigation-menu"
           aria-expanded="false"
           aria-label="Navigation Menu"
@@ -36,20 +36,20 @@ const Header = () => (
           id="navigation-menu"
           className="hidden absolute left-0 top-full mt-4 w-full bg-white pb-4 lg:static lg:mt-0 lg:flex flex-1 lg:items-center lg:justify-between lg:pb-0"
         >
-          <ul className="flex flex-col lg:px-6 lg:flex-row flex-1 lg:justify-center lg:items-center lg:space-y-0 lg:space-x-8">
+          <ul className="text-lg flex flex-col lg:px-6 lg:flex-row flex-1 lg:justify-center lg:items-center lg:space-y-0 lg:space-x-8 uppercase">
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-              <a href="/albums" className="text-[var(--dark-text-color)]">
+              <a href="/albums" className="text-accent-1">
                 Albums
               </a>
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-              <a href="/about" className="text-[var(--dark-text-color)]">
+              <a href="/about" className="text-accent-1">
                 About
               </a>
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
               <div className="group relative w-full">
-                <button className="flex w-full cursor-pointer items-center text-[var(--dark-text-color)] lg:justify-center">
+                <button className="uppercase flex w-full cursor-pointer items-center text-accent-1 lg:justify-center">
                   <span>Services</span>
                   <i
                     className="fa-solid fa-chevron-down ml-1 transition-[rotate] lg:group-hover:rotate-[180deg]"
@@ -75,15 +75,15 @@ const Header = () => (
               </div>
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-              <a href="/testimonials" className="text-[var(--dark-text-color)]">
+              <a href="/testimonials" className="text-primary">
                 Testimonials
               </a>
             </li>
           </ul>
-          <div className="flex mt-4 flex-col lg:flex-row items-center space-y-4 lg:mt-0 lg:space-y-0 lg:space-x-4 text-sm lg:text-base">
+          <div>
             <a
               href="/contact"
-              className="rounded bg-[var(--primary-button-bg-color)] px-4 py-2 text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)]"
+              className="text-xl rounded uppercase px-6 py-2 bg-highlight text-bold text-primary font-heading hover:brightness-90"
             >
               Book Now
             </a>

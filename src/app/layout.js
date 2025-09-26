@@ -1,17 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Italiana, Work_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const italiana = Italiana({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-italiana',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const workSans = Work_Sans({
+  weight: ['300', '400', '500'],
+  subsets: ['latin'],
+  variable: '--font-work-sans',
 });
 
 export const metadata = {
@@ -23,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${italiana.variable} ${workSans.variable}`}
       >
         <Header />
         {children}

@@ -7,6 +7,15 @@
   --color-primary: #1c1c1c;
   --color-highlight: #C2B280;
   --color-background: #FAF8F5;
-  --font-family-body: "Open Sans", "sans-serif";
-  --font-family-heading: "Playfair Display", "serif";
+  --font-heading: 'var(--font-italiana)', 'serif';
+  --font-body: 'var(--font-work-sans)', 'sans-serif';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
 }
