@@ -9,7 +9,6 @@ export default function Home() {
           className="absolute inset-0 h-full w-full bg-cover bg-center object-cover brightness-75 bg-[url('https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/72c42911-7ede-4a73-d6c1-f17cdcb6ff00/public')]"
           data-seo-image=""
           aria-label="The man gently holds the bride's hand with a beautiful golden wedding ring. Enlarged image of newlyweds' hands. Wedding concept. The groom gently touches the bride"
-          data-media='{"id":"2090025382","src":"iStock","type":"image"}'
         ></div>
         <div className="z-10 h-full w-full max-w-3xl md:w-3/4 md:pr-12 lg:w-1/2">
           <div className="text-center md:text-left">

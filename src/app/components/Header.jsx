@@ -56,7 +56,7 @@ const Header = () => (
                   <div className="mt-2 bg-white p-1.5 lg:rounded-lg lg:border lg:border-gray-200 lg:shadow-sm">
                     <a
                       className="block cursor-pointer border-b border-solid px-3 py-1.5 hover:bg-[#1900410a] lg:py-3 lg:font-medium"
-                      href="/services"
+                      href="/packages"
                     >
                       Packages
                     </a>
