@@ -83,7 +83,7 @@ const Header = () => (
           <div>
             <a
               href="/contact"
-              className="text-xl rounded uppercase px-6 py-2 bg-highlight text-bold text-primary font-heading hover:brightness-90"
+              className="text-xl rounded uppercase px-8 py-3 bg-highlight text-bold text-primary font-heading hover:brightness-90"
             >
               Book Now
             </a>

@@ -14,8 +14,8 @@ export default function Home() {
         ></div>
         <div className="z-10 h-full w-full max-w-3xl md:w-3/4 md:pr-12 lg:w-1/2">
           <div className="text-center md:text-left">
-            <h1 className="mb-4 text-3xl font-semibold text-[var(--light-text-color)] [font-family:var(--font-family-heading)] sm:text-4xl md:pr-36 md:text-6xl">Elevate Your Wedding Experience</h1>
-            <p className="mb-8 text-lg text-[var(--light-text-color)]">Capture the essence of your special day with stunning photography that tells your unique love story. With an artistic eye and attention to detail, I create breathtaking images that you&apos;ll cherish forever.</p>
+            <h1 className="mb-4 text-3xl font-semibold text-white sm:text-4xl md:pr-36 md:text-6xl">Elevate Your Wedding Experience</h1>
+            <p className="mb-8 text-xl text-white">Capture the essence of your special day with stunning photography that tells your unique love story. With an artistic eye and attention to detail, I create breathtaking images that you&apos;ll cherish forever.</p>
             <div>
               <a href="/gallery" className="inline-block rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-sm font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)]">
                 <span>Explore the magic of your wedding day</span>
@@ -55,7 +55,7 @@ export default function Home() {
                 <li>Passionate dedication to capturing every moment</li>
               </ul>
               <div className="flex justify-center md:block">
-                <a href="/gallery" className="mb-12 inline-block rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-lg font-medium text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]">Embark on this beautiful journey</a>
+                <a href="/albums" className="mb-12 btn-primary">Embark on this beautiful journey</a>
               </div>
             </div>
           </div>
@@ -63,13 +63,13 @@ export default function Home() {
       </section>
       <section className="bg-[var(--light-background-color)]">
         <div className="container relative z-10 mx-auto py-24 xl:px-12 2xl:px-36">
-          <h3 className="pb-4 text-center text-base font-medium uppercase tracking-widest text-[var(--primary-color)]">
+          <h3 className="text-center text-base font-medium uppercase tracking-widest">
             Portfolio
           </h3>
-          <h2 className="md:text-4x mx-auto mb-6 text-center text-4xl font-bold [font-family:var(--font-family-heading)]">
-            <span className="border-b-4 border-[var(--primary-color)]">Discover Our Artistry</span>
+          <h2 className="md:text-4x mx-auto mb-10 text-center text-4xl font-bold">
+            <span className="border-b-4 border-primary">Discover Our Artistry</span>
           </h2>
-          <div className="grid grid-cols-5 gap-x-6 gap-y-6">
+          <div className="grid grid-cols-5 gap-x-3 gap-y-3">
             {/* Portfolio Images */}
             {[
               "STW01082.jpg",
@@ -90,11 +90,11 @@ export default function Home() {
             ].map((file, i) => (
               <Image
                 key={i}
-                className="aspect-square object-cover"
+                className="aspect-square object-cover rounded"
                 src={`/images/albums/album1/${file}`}
                 alt={`Portfolio image ${i + 1}`}
-                width={200}
-                height={200}
+                width={250}
+                height={250}
               />
             ))}
           </div>
@@ -102,10 +102,10 @@ export default function Home() {
       </section>
       <section>
         <div className="container mx-auto px-6 md:pt-24">
-          <div className="mb-12 text-3xl font-semibold [font-family:var(--font-family-heading)] md:text-5xl">
+          <div className="mb-12 text-3xl text-center font-semibold md:text-5xl">
             Our Exquisite Gallery
           </div>
-          <div className="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-24 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-10 xl:grid-cols-4">
             {/* Gallery Images */}
             {[
               "STW00906.jpg",
@@ -126,10 +126,10 @@ export default function Home() {
                   height={256}
                 />
                 <div>
-                  <div className="mt-4 font-semibold text-[var(--primary-color)]">
+                  <div className="mt-2 font-semibold">
                     Gallery Highlight
                   </div>
-                  <div className="mt-4 text-[var(--gray-text-color)]">
+                  <div className="text-accent3">
                     A special moment from our collection.
                   </div>
                 </div>
@@ -138,10 +138,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-gradient-to-b from-[var(--light-background-color)]">
+      <section className="bg-gradient-to-b from-accent2">
         <div className="container mx-auto mt-8 px-6 pb-12 pt-8 md:mt-20 md:pb-24 md:pt-20">
-          <div className="mb-3 text-center text-3xl font-semibold [font-family:var(--font-family-heading)] md:text-5xl">Our Satisfied Clients</div>
-          <div className="mb-12 text-center text-sm text-gray-500">Discover the experiences of couples we&apos;ve captured</div>
+          <div className="mb-3 text-center text-3xl font-semibold md:text-5xl">Our Satisfied Clients</div>
+          <div className="mb-12 text-center text-lg text-gray-500">Discover the experiences of couples we&apos;ve captured</div>
           <div className="flex flex-col items-center justify-center space-y-12 lg:flex-row lg:space-x-20 lg:space-y-0">
             {/* Testimonials */}
             {[
@@ -193,7 +193,7 @@ export default function Home() {
                     <i className="fa-solid fa-star fa-xs text-yellow-500" aria-hidden="true"></i>
                     <i className="fa-solid fa-star fa-xs text-yellow-500" aria-hidden="true"></i>
                   </div>
-                  <div className="text-[var(--dark-text-color)]">{testimonial.review}</div>
+                  <div className="text-primary">{testimonial.review}</div>
                 </div>
               </div>
             ))}
@@ -243,49 +243,49 @@ export default function Home() {
                     <div className="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
                       <div className="w-full">
                         <div>
-                          <label htmlFor="first-name" className="font-medium text-[var(--dark-text-color)]">First Name</label>
+                          <label htmlFor="first-name" className="font-medium text-primary">First Name</label>
                         </div>
                         <div>
-                          <input name="first-name" type="text" className="w-full border border-[#ffffff] border-b-[var(--light-border-color)] p-2" />
+                          <input name="first-name" type="text" className="w-full border border-[#ffffff] border-b-primary p-2" />
                         </div>
                       </div>
                       <div className="w-full">
                         <div>
-                          <label htmlFor="last-name" className="font-medium text-[var(--dark-text-color)]">Last Name</label>
+                          <label htmlFor="last-name" className="font-medium text-primary">Last Name</label>
                         </div>
                         <div>
-                          <input name="last-name" type="text" className="w-full border border-[#ffffff] border-b-[var(--light-border-color)] p-2" />
+                          <input name="last-name" type="text" className="w-full border border-[#ffffff] border-b-primary p-2" />
                         </div>
                       </div>
                     </div>
                     <div className="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
                       <div className="w-full">
                         <div>
-                          <label htmlFor="email" className="font-medium text-[var(--dark-text-color)]">Your Email</label>
+                          <label htmlFor="email" className="font-medium text-primary">Your Email</label>
                         </div>
                         <div>
-                          <input type="email" name="email" className="w-full border border-[#ffffff] border-b-[var(--light-border-color)] p-2" />
+                          <input type="email" name="email" className="w-full border border-[#ffffff] border-b-primary p-2" />
                         </div>
                       </div>
                       <div className="w-full">
                         <div>
-                          <label htmlFor="phone" className="font-medium text-[var(--dark-text-color)]">Your Phone</label>
+                          <label htmlFor="phone" className="font-medium text-primary">Your Phone</label>
                         </div>
                         <div>
-                          <input type="phone" name="phone" className="w-full border border-[#ffffff] border-b-[var(--light-border-color)] p-2" />
+                          <input type="phone" name="phone" className="w-full border border-[#ffffff] border-b-primary p-2" />
                         </div>
                       </div>
                     </div>
                     <div className="w-full">
                       <div>
-                        <label htmlFor="message" className="font-medium text-[var(--dark-text-color)]">Your Message</label>
+                        <label htmlFor="message" className="font-medium text-primary">Your Message</label>
                       </div>
                       <div>
-                        <textarea name="message" rows={4} className="w-full border border-[#ffffff] border-b-[var(--light-border-color)] p-2"></textarea>
+                        <textarea name="message" rows={4} className="w-full border border-[#ffffff] border-b-primary p-2"></textarea>
                       </div>
                     </div>
                     <div>
-                      <button type="submit" className="items-center rounded-[var(--button-rounded-radius)] bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-sm font-semibold uppercase text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)] hover:text-[var(--primary-button-hover-text-color)]">
+                      <button type="submit" className="items-center btn-primary">
                         Submit Your Request
                       </button>
                     </div>
