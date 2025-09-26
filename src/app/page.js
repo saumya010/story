@@ -7,7 +7,6 @@ export default function Home() {
         {/* leave data-seo-image attribute on this div */}
         <div
           className="absolute inset-0 h-full w-full bg-cover bg-center object-cover brightness-75 bg-[url('https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/72c42911-7ede-4a73-d6c1-f17cdcb6ff00/public')]"
-          data-landingsite-gallery-type="image"
           data-seo-image=""
           aria-label="The man gently holds the bride's hand with a beautiful golden wedding ring. Enlarged image of newlyweds' hands. Wedding concept. The groom gently touches the bride"
           data-media='{"id":"2090025382","src":"iStock","type":"image"}'
@@ -214,7 +213,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col">
                       <div className="text-2xl font-semibold">Our Studio</div>
-                      <div>Boulder, Colorado</div>
+                      <div>Mumbai, India</div>
                     </div>
                   </div>
                   <div className="mb-6 flex flex-row space-x-4">
@@ -223,7 +222,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col">
                       <div className="text-2xl font-semibold">Contact Email</div>
-                      <div>info@storyweddingphotography.com</div>
+                      <div>hello@storyweavers.co.in</div>
                     </div>
                   </div>
                   <div className="flex flex-row space-x-4">
@@ -238,7 +237,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full p-6">
-                <form data-landingsite-contact-form="">
+                <form>
                   <div className="flex flex-col space-y-4 md:space-y-12">
                     <div className="flex flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
                       <div className="w-full">
@@ -246,7 +245,7 @@ export default function Home() {
                           <label htmlFor="first-name" className="font-medium text-primary">First Name</label>
                         </div>
                         <div>
-                          <input name="first-name" type="text" className="w-full border border-[#ffffff] border-b-primary p-2" />
+                          <input name="first-name" type="text" className="w-full border border-[#ffffff] outline-none border-b-primary p-2" />
                         </div>
                       </div>
                       <div className="w-full">
@@ -254,7 +253,7 @@ export default function Home() {
                           <label htmlFor="last-name" className="font-medium text-primary">Last Name</label>
                         </div>
                         <div>
-                          <input name="last-name" type="text" className="w-full border border-[#ffffff] border-b-primary p-2" />
+                          <input name="last-name" type="text" className="w-full border border-[#ffffff] outline-none border-b-primary p-2" />
                         </div>
                       </div>
                     </div>
@@ -264,7 +263,7 @@ export default function Home() {
                           <label htmlFor="email" className="font-medium text-primary">Your Email</label>
                         </div>
                         <div>
-                          <input type="email" name="email" className="w-full border border-[#ffffff] border-b-primary p-2" />
+                          <input type="email" name="email" className="w-full border border-[#ffffff] outline-none border-b-primary p-2" />
                         </div>
                       </div>
                       <div className="w-full">
@@ -272,7 +271,7 @@ export default function Home() {
                           <label htmlFor="phone" className="font-medium text-primary">Your Phone</label>
                         </div>
                         <div>
-                          <input type="phone" name="phone" className="w-full border border-[#ffffff] border-b-primary p-2" />
+                          <input type="phone" name="phone" className="w-full border border-[#ffffff] outline-none border-b-primary p-2" />
                         </div>
                       </div>
                     </div>
@@ -281,7 +280,7 @@ export default function Home() {
                         <label htmlFor="message" className="font-medium text-primary">Your Message</label>
                       </div>
                       <div>
-                        <textarea name="message" rows={4} className="w-full border border-[#ffffff] border-b-primary p-2"></textarea>
+                        <textarea name="message" rows={4} className="w-full border border-[#ffffff] outline-none border-b-primary p-2"></textarea>
                       </div>
                     </div>
                     <div>

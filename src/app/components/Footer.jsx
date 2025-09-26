@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const Footer = () => (
-  <footer className="mt-8 bg-accent1" id="global-footer">
+  <footer className="bg-accent1 border-t-8 border-accent2" id="global-footer">
     <div className="container mx-auto px-4 text-center">
       <div className="flex items-center justify-center pt-12 text-left text-xl font-bold md:justify-start lg:pt-20">
         <a
@@ -48,13 +48,13 @@ const Footer = () => (
         </div>
         <div className="mb-2 space-y-3">
           <div className="flex items-center justify-center space-x-2 text-sm">
-            <p>123 Wedding Blvd, Denver, CO, 80203</p>
+            <p>Mumbai, India</p>
           </div>
           <div className="flex items-center justify-center space-x-2 text-sm">
             <p>(720) 555-4321</p>
           </div>
           <div className="flex items-center justify-center space-x-2 text-sm">
-            <p>contact@story.com</p>
+            <p>hello@storyweavers.co.in</p>
           </div>
         </div>
       </div>

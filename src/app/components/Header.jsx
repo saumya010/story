@@ -2,14 +2,10 @@ import React from "react";
 import Image from "next/image";
 
 const Header = () => (
-  <header className="relative z-50 border-b border-accent2">
+  <header className="relative z-50 border-b border-accent1">
     <nav className="container mx-auto py-4">
       <div className="flex items-center justify-between relative">
-        <a
-          href="/"
-          className="text-xl text-[var(--primary-color)] [font-family:var(--font-family-heading)] sm:text-3xl"
-          data-logo=""
-        >
+        <a href="/" className="text-xl sm:text-3xl">
           <Image
             src="/images/logo.png"
             alt="Story Weavers"
