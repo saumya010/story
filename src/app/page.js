@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -15,9 +16,9 @@ export default function Home() {
             <h1 className="mb-4 text-3xl font-semibold text-white sm:text-4xl md:pr-36 md:text-6xl">Elevate Your Wedding Experience</h1>
             <p className="mb-8 text-xl text-white">Capture the essence of your special day with stunning photography that tells your unique love story. With an artistic eye and attention to detail, I create breathtaking images that you&apos;ll cherish forever.</p>
             <div>
-              <a href="/gallery" className="inline-block rounded bg-[var(--primary-button-bg-color)] px-[var(--button-padding-x)] py-[var(--button-padding-y)] text-sm font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)]">
+              <Link href="/albums" className="btn-primary">
                 <span>Explore the magic of your wedding day</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -53,7 +54,7 @@ export default function Home() {
                 <li>Passionate dedication to capturing every moment</li>
               </ul>
               <div className="flex justify-center md:block">
-                <a href="/albums" className="mb-12 btn-primary">Embark on this beautiful journey</a>
+                <Link href="/albums" className="mb-12 btn-primary">Embark on this beautiful journey</Link>
               </div>
             </div>
           </div>

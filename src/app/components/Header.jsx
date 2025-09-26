@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => (
   <header className="relative z-50 border-b border-accent1">
     <nav className="container mx-auto py-4">
       <div className="flex items-center justify-between relative">
-        <a href="/" className="text-xl sm:text-3xl">
+        <Link href="/" className="text-xl sm:text-3xl">
           <Image
             src="/images/logo.png"
             alt="Story Weavers"
@@ -13,7 +14,7 @@ const Header = () => (
             height={40}
             className="h-20"
           />
-        </a>
+        </Link>
         <button
           id="mobile-menu-button"
           data-collapse-toggle="navigation-menu"
@@ -34,14 +35,14 @@ const Header = () => (
         >
           <ul className="text-lg flex flex-col lg:px-6 lg:flex-row flex-1 lg:justify-center lg:items-center lg:space-y-0 lg:space-x-8 uppercase">
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-              <a href="/albums" className="text-accent-1">
+              <Link href="/albums" className="text-accent-1">
                 Albums
-              </a>
+              </Link>
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-              <a href="/about" className="text-accent-1">
+              <Link href="/about" className="text-accent-1">
                 About
-              </a>
+              </Link>
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
               <div className="group relative w-full">
@@ -54,35 +55,35 @@ const Header = () => (
                 </button>
                 <div className="left-0 top-full z-50 hidden w-full text-black lg:absolute lg:w-[260px] lg:pt-2 lg:group-hover:block">
                   <div className="mt-2 bg-white p-1.5 lg:rounded-lg lg:border lg:border-gray-200 lg:shadow-sm">
-                    <a
+                    <Link
                       className="block cursor-pointer border-b border-solid px-3 py-1.5 hover:bg-[#1900410a] lg:py-3 lg:font-medium"
                       href="/packages"
                     >
                       Packages
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="block cursor-pointer px-3 py-1.5 hover:bg-[#1900410a] lg:py-3 lg:font-medium"
                       href="/faqs"
                     >
                       FAQs
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
             </li>
             <li className="flex items-center p-2 border-t border-gray-200 md:border-t-transparent md:p-0">
-              <a href="/testimonials" className="text-primary">
+              <Link href="/testimonials" className="text-primary">
                 Testimonials
-              </a>
+              </Link>
             </li>
           </ul>
           <div>
-            <a
+            <Link
               href="/contact"
               className="text-xl rounded uppercase px-8 py-3 bg-highlight text-bold text-primary font-heading hover:brightness-90"
             >
               Book Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>
