@@ -11,9 +11,12 @@ export default function ServicesPage() {
           height={400}
           className="rounded-lg mb-8 object-cover"
         />
-        <h1 className="mb-4 text-4xl font-bold [font-family:var(--font-family-heading)]">Our Services</h1>
+        <h1 className="mb-4 text-4xl font-bold [font-family:var(--font-family-heading)]">
+          Our Services
+        </h1>
         <p className="mb-6 text-lg text-gray-700 max-w-2xl">
-          We offer a variety of professional photography services to capture every special moment, tailored to your unique needs.
+          We offer a variety of professional photography services to capture
+          every special moment, tailored to your unique needs.
         </p>
         <ul className="mb-8 list-disc pl-6 text-left text-lg max-w-xl mx-auto">
           <li>Wedding Photography</li>
@@ -23,9 +26,11 @@ export default function ServicesPage() {
           <li>Custom Albums & Prints</li>
         </ul>
         <div className="flex justify-center">
-          <a href="/contact" className="rounded bg-[var(--primary-button-bg-color)] px-6 py-3 text-lg font-semibold text-[var(--primary-button-text-color)] hover:bg-[var(--primary-button-hover-bg-color)]">Enquire Now</a>
+          <a href="/contact" className="btn-primary">
+            Enquire Now
+          </a>
         </div>
       </section>
     </div>
   );
-} 
+}

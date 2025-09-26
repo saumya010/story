@@ -1,10 +1,8 @@
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => (
-  <footer
-    className="mt-8 bg-[var(--light-background-color)] code-section"
-    id="global-footer"
-  >
+  <footer className="mt-8 bg-accent1" id="global-footer">
     <div className="container mx-auto px-4 text-center">
       <div className="flex items-center justify-center pt-12 text-left text-xl font-bold md:justify-start lg:pt-20">
         <a
@@ -12,21 +10,23 @@ const Footer = () => (
           className="text-xl [font-family:var(--font-family-heading)]"
           data-logo=""
         >
-          <img
-            src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/7f4d9f63-48d1-43ba-2e8f-1a46684b3300/publicContain"
-            alt="story Logo"
-            className="h-20"
+          <Image
+            src="/images/logo.png"
+            alt="Story Weavers"
+            width={200}
+            height={40}
+            className="h-20 mb-4"
           />
         </a>
       </div>
-      <div className="grid grid-cols-1 pt-4 md:grid-cols-3 lg:grid-cols-4 lg:space-x-24">
-        <div className="mb-8">
-          <p className="text-center text-xs md:text-left">
+      <div className="grid grid-cols-1 pt-4 md:grid-cols-3 lg:space-x-24">
+        <div className="mb-2">
+          <p className="text-center text-sm md:text-left">
             Capture the beauty of your special day with our professional wedding
             photography services. We turn your unforgettable moments into
             timeless memories.
           </p>
-          <div className="my-8 flex flex-row justify-center md:justify-start">
+          <div className="mt-4 flex flex-row justify-center md:justify-start">
             <a href="/" className="mx-2" aria-label="Visit our Facebook">
               <i className="fa-brands fa-facebook-f" aria-hidden="true"></i>
             </a>
@@ -38,7 +38,7 @@ const Footer = () => (
             </a>
           </div>
         </div>
-        <div className="mb-8 space-y-3">
+        <div className="mb-2 space-y-3">
           <div className="flex items-center justify-center space-x-2 text-sm">
             <a href="/about">About</a>
           </div>
@@ -46,7 +46,7 @@ const Footer = () => (
             <a href="/faqs">FAQs</a>
           </div>
         </div>
-        <div className="mb-8 space-y-3">
+        <div className="mb-2 space-y-3">
           <div className="flex items-center justify-center space-x-2 text-sm">
             <p>123 Wedding Blvd, Denver, CO, 80203</p>
           </div>
@@ -59,7 +59,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <p className="py-12 text-center text-sm">
+    <p className="py-4 text-center text-sm">
       &copy; 2025 Story Weavers, All Rights Reserved
     </p>
   </footer>

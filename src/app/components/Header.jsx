@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const Header = () => (
-  <header className="relative z-50 code-section" id="global-header">
+  <header className="relative z-50 border-b border-accent2">
     <nav className="container mx-auto py-4">
       <div className="flex items-center justify-between relative">
         <a
